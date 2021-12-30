@@ -16,7 +16,8 @@
     "esm": "^3.2.25",
     "express": "^4.17.2",
     "nodemon": "^2.0.15",
-    "prettier": "^2.5.1"
+    "prettier": "^2.5.1",
+    "sha256": "^0.2.0"
   },
   "devDependencies": {
     "@babel/core": "^7.16.5",
