@@ -1,7 +1,7 @@
 {
   "name": "client",
   "version": "1.0.0",
-  "description": "A React Boostrap with Redux-thunk + Router + Axios",
+  "description": "A React Bootstrap with Redux-thunk + Router + Axios",
   "author": "Calvin Nguyen",
   "private": true,
   "dependencies": {
