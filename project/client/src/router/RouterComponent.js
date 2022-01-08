@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
-import { BrowserRoute as Router } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 
 import RoutesComponent from './RoutesComponent';
 
