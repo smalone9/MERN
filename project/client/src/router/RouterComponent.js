@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
-import { BrowserRouter } from './RoutesComponent';
+import { BrowserRoute as Router } from 'react-router-dom';
+
+import RoutesComponent from './RoutesComponent';
 
 class RouterComponent extends Component {
   render() {
