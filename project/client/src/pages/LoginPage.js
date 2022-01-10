@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import { Redirect, withRouter } from 'react-react-dom';
+import { Redirect, withRouter } from 'react-router-dom';
 
 import { login } from '../api/login.api';
 import Login from '../components/Login';

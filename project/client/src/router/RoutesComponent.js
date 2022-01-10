@@ -3,7 +3,7 @@ import { Route } from 'react-router-dom';
 
 //Page
 import HomePage from '../pages/HomePages';
-import LoginPage from '../pages/LoginPages';
+import LoginPage from '../pages/LoginPage';
 
 class RoutesComponent extends Component {
   render() {

@@ -1,9 +1,6 @@
 import axios from 'axios';
-
 import { loginSuccessfully, loginFailed } from '../store/actions/auth.action';
-
 import { HOST, LOGIN_URI, USER_TOKEN } from '../constants';
-
 import { setTokenToLocalStorage } from '../utils';
 
 // eslint-disable-next-line import/prefer-default-export
@@ -18,6 +15,6 @@ export const login = userData => dispatch => {
     })
     .catch(err => {
       console.log(`error: ${err}`);
-      dispatch(loginError(err));
+      dispatch(loginFailed(err));
     });
 };
