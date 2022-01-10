@@ -3,12 +3,14 @@ import { Route } from 'react-router-dom';
 
 //Page
 import HomePage from '../pages/HomePages';
+import LoginPage from '../pages/LoginPages';
 
 class RoutesComponent extends Component {
   render() {
     return (
       <div>
         <Route exact path="/" component={HomePage} />
+        <Route exact path="/login" component={LoginPage} />
       </div>
     );
   }
