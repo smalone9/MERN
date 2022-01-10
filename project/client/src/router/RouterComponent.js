@@ -7,7 +7,7 @@ import RoutesComponent from './RoutesComponent';
 
 class RouterComponent extends Component {
   render() {
-    const { user } = this.props || {};
+    const { user } = this.props.user || {};
 
     return (
       <Router basename="/">

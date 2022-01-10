@@ -5,7 +5,7 @@ import {
   SET_USER_TOKEN,
 } from '../../constants';
 
-export default function(state = { loading: false, error: null }, action) {
+export default function(state = { loading: false, errors: null }, action) {
   switch (action.type) {
     case LOGIN_SUCCESSFULLY:
       return { ...state, ...action.payload, ...{ loading: false } };

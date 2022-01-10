@@ -4,7 +4,7 @@ import { bindActionCreators } from 'redux';
 import { Redirect, withRouter } from 'react-router-dom';
 
 import { login } from '../api/login.api';
-import Login from '../components/Login';
+import Login from '../components/Login.js';
 
 class LoginPage extends Component {
   constructor() {
@@ -13,15 +13,19 @@ class LoginPage extends Component {
       email: '',
       password: '',
     };
+
     this.onChange = this.onChange.bind(this);
     this.onClick = this.onClick.bind(this);
   }
+
   onChange = e => {
+    this.setState({ [e.target.id]: e.target.value });
+  };
+
+  onClick = e => {
     e.preventDefault();
-    this.props.login({
-      email: this.state.email,
-      password: this.state.password,
-    });
+    const { email, password } = this.state;
+    this.props.login({ email, password });
   };
 
   render() {

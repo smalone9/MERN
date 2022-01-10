@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Route } from 'react-router-dom';
 
 //Page
-import HomePage from '../pages/HomePages';
+import HomePage from '../pages/HomePage';
 import LoginPage from '../pages/LoginPage';
 
 class RoutesComponent extends Component {
